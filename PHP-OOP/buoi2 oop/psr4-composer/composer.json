@@ -1,0 +1,9 @@
+{
+    "name": "lam/psr4-composer",
+    "autoload": {
+        "psr-4": {
+            "Lam\\Psr4Composer\\": "src/"
+        }
+    },
+    "require": {}
+}

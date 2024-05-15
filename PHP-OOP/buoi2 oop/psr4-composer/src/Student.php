@@ -1,13 +1,6 @@
 <?php
-// $array =[
-//     'name' => 'Ahihi',
-//     'age' => 18,
-//     'mark' => 75,
-// ];
 
-
-namespace buoi2;
-
+namespace Lam\Psr4Composer;
 class Student
 {
     // Hàm Construct
@@ -34,16 +27,3 @@ class Student
         echo "Destructed" . PHP_EOL;
     }
 }
-$student = new Student("kaka", 25, 100);
-echo "<pre>";
-print_r($student);
-$student->showName();
-
-unset($student);
-
-$student2 = new Student("Student 2");
-echo "<pre>";
-print_r($student2);
-$student2->showName();
-
-
