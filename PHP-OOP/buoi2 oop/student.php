@@ -46,4 +46,6 @@ echo "<pre>";
 print_r($student2);
 $student2->showName();
 
+unset($student2);
+
 

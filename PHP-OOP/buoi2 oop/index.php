@@ -4,10 +4,12 @@ require_once 'student.php';
 require_once './namespace/controllers/studentController.php';
 use \buoi2\controllers\StudentController as S3; // namespace alias
 
-$student = new \buoi2\Student('Namespace');
+$student4 = new \buoi2\Student('Namespace', 20);
 echo "<pre>";
-print_r($student);
+print_r($student4);
 
-$student3 = new S3();
+unset($student4);
+
+$student3 = new \buoi2\Student('Ahihi', 19, 50);
 echo "<pre>";
 print_r($student3);
