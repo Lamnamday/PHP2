@@ -1,0 +1,15 @@
+{
+    "name": "lam/interface_attrack",
+    "autoload": {
+        "psr-4": {
+            "Lam\\InterfaceAttrack\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lamnamday",
+            "email": "chinh.nncn@gmail.com"
+        }
+    ],
+    "require": {}
+}

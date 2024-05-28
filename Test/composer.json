@@ -1,0 +1,15 @@
+{
+    "name": "lam/test",
+    "autoload": {
+        "psr-4": {
+            "Lam\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lamnamday",
+            "email": "chinh.nncn@gmail.com"
+        }
+    ],
+    "require": {}
+}
