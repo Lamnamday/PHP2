@@ -1,23 +1,33 @@
-<?php 
+<?php
 
 namespace Lam\Test;
 
- 
-class Course{
-    private $course_id;
-private $course_name;
-private $teacher;
+use Lam\Test\Employee\Teacher;
+
+class Course
+{
     public function __construct(
-        $course_id, $course_name, $teacher
-    )
-    {
-        $this->course_id = $course_id;
-        $this->course_name = $course_name;
-        $this->teacher = $teacher;
+        private string $course_id,
+        private string $course_name,
+        private Teacher $teacher
+    ) {
     }
-    public function getDetail(){
-        return "Course Name: $this->course_name, 
-                ID: $this->course_id, 
-                Teacher: " . (($this->teacher instanceof Teacher) ? $this->teacher->getInfo() : "Unknown");
+    public function getCourseName()
+    {
+        return $this->course_name;
+    }
+    public function getCourseCode()
+    {
+        return $this->course_id;
+    }
+    public function getTeacher()
+    {
+        return $this->teacher;
+    }
+    public function getDetail()
+    {
+        echo 'Name: ' . $this->course_name . PHP_EOL;
+        echo 'Code: ' . $this->course_id . PHP_EOL;
+        echo 'Teacher: ' . $this->teacher->getName() . PHP_EOL;
     }
 }
